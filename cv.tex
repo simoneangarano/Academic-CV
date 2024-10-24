@@ -1,0 +1,86 @@
+%!TEX encoding = UTF-8 Unicode
+% LaTeX Template for CV/Resume
+%
+% This template has been downloaded and modified from:
+% https://github.com/posquit0/Awesome-CV
+%
+% Original Author:
+% Claud D. Park <posquit0.bj@gmail.com>
+% http://www.posquit0.com
+%
+% Modified (March 2019) by:
+% Jessica A. Rick <jrick@uwyo.edu>
+% http://www.jessicarick.com
+% 
+%
+
+
+%-------------------------------------------------------------------------------
+% CONFIGURATIONS
+%-------------------------------------------------------------------------------
+% A4 paper size by default, use 'letterpaper' for US letter
+\documentclass[11pt, letterpaper]{academic-cv}
+
+% Configure page margins with geometry
+\geometry{left=0.75in, top=0.75in, right=0.75in, bottom=0.75in, footskip=.5cm}
+
+% Specify the location of the included fonts
+\fontdir[fonts/]
+
+% If you would like to change the social information separator from a pipe (|) to something else
+\renewcommand{\acvHeaderSocialSep}{\quad\textbar\quad}
+\usepackage{eurosym}
+
+%-------------------------------------------------------------------------------
+%	PERSONAL INFORMATION
+%	Comment any of the lines below if they are not required
+%-------------------------------------------------------------------------------
+\name{Simone Angarano}{}
+\position{PhD Candidate{\enskip\cdotp\enskip} Efficient and Robust Deep Learning}
+\address{\href{http://www.polito.it}{Politecnico di Torino, Turin, Italy} \\ \href{http://www.pic4ser.polito.it}{Interdepartmental Center for Service Robotics (PIC4SeR)}}
+
+%\mobile{+1 000-000-0000}
+\email{simone.angarano@polito.it}
+\homepage{simoneangarano.github.io}
+\scholar{OtQ7O7QAAAAJ}
+\github{simoneangarano}
+%\linkedin{simoneangarano}
+% \gitlab{my-gitlab-id}
+% \stackoverflow{SO-id}{SO-name}
+%\twitter{@simoneangarano}
+% \skype{skype-id}
+% \reddit{reddit-id}
+
+%-------------------------------------------------------------------------------
+\begin{document}
+
+% Print the header with the above personal information
+% Give optional argument to change alignment(C: center, L: left, R: right)
+\makecvheader
+
+% Print the footer with 3 arguments(<left>, <center>, <right>)
+% Leave any of these blank if they are not needed
+\makecvfooter
+  {Sep 2023}
+  {Simone Angarano ~~~·~~~ CV}
+  {\thepage}
+
+
+%-------------------------------------------------------------------------------
+%	CV/RESUME CONTENT
+%	Each section is imported separately. Open each file in turn to modify content
+%   Comment out any sections that are not appropriate for your CV
+%-------------------------------------------------------------------------------
+%\vspace{10pt}
+\input{cv/education.tex} % OK
+\input{cv/research.tex} % OK
+\input{cv/publications.tex} % OK
+\input{cv/presentation.tex} % OK
+\input{cv/teaching.tex} % OK
+\input{cv/mentoring.tex} % OK
+\input{cv/honors.tex} % OK
+%\input{cv/professional.tex} %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\input{cv/extracurricular.tex} 
+
+%-------------------------------------------------------------------------------
+\end{document}
